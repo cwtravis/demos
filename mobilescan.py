@@ -64,7 +64,7 @@ def asoc_createscan(fileId, appId, scanName):
 
 
 token = asoc_login(apiKeyId, apiKeySecret)
-if(!token):
+if(token != False):
 	print("Login: True")
 	
 print("Uploading File:")
