@@ -22,7 +22,7 @@ my $dbh       = DBI->connect($database,$db_user,$db_password);
 
 $error_message = "";
 
-#global vars 2
+#global vars 3
 $manage = "/cgi-bin/account";
 $tpath = "/var/www/vhosts/testsite.com/cgi-bin/templates";
 $ipath = $ENV{PATH_INFO};
