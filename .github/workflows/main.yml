@@ -8,6 +8,7 @@ jobs:
       - name: Clone Repository
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
+          depth: 1
           branch: 'master'
           owner: 'cwtravis'
           repository: 'demos'
