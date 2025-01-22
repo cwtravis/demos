@@ -2,7 +2,7 @@
 # Manage a use account
 #  counter creation
 #  counter statistics
-#  install instructions
+#  install instructions new change
 
 require "cgi.ph";
 require "imagesize.pl";
