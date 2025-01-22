@@ -14,6 +14,9 @@ jobs:
         with:
           repository: cwtravis/asoc_sast_incremental
           path: tools
+      - name: Change Working Dir
+      - run: |
+          ls -la | pwd
       - name: Run AppScan SAST scan
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
