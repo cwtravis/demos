@@ -1,6 +1,8 @@
 name: "ACoC SAST Incremental"
 on:
-  workflow_dispatch
+  push:
+    branches: [ master ]
+  workflow_dispatch:
 jobs:
   scan:
     runs-on: ubuntu-latest
