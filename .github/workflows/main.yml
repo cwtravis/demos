@@ -16,7 +16,7 @@ jobs:
           path: tools
       - name: Change Working Dir
         run: 
-          ls -la & pwd
+          cd main & python3 ../tools/SAST_Incremental.py ${{secrets.ASOC_KEY}} ${{secrets.ASOC_SECRET}} ${{secrets.APP_ID}}
       - name: Run AppScan SAST scan
         uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
