@@ -16,7 +16,7 @@ jobs:
           path: tools
       - name: Change Working Dir
         run: 
-          echo  ${GITHUB_WORKSPACE} 
+          which git
       - name: Generate ASoC Config XML
         run: 
           python3 ${GITHUB_WORKSPACE}/tools/SAST_Incremental.py ${{secrets.ASOC_KEY}} ${{secrets.ASOC_SECRET}} ${{secrets.APP_ID}}
